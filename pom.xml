@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.intercorp</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>intercorp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Api de clientes intercorp</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -94,6 +94,7 @@
 	</dependencyManagement>
 
 	<build>
+		
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
