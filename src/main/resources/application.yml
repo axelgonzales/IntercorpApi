@@ -1,0 +1,33 @@
+logging:
+  level:
+    root: INFO
+    org.springframework: ERROR
+    com.intercorp: TRACE
+    org.springframework.jdbc.core.JdbcTemplate: TRACE
+    org.springframework.jdbc.core.simple.SimpleJdbcCall: TRACE
+    org.springframework.web.client.RestTemplate: DEBUG
+
+server:
+  port: 8088
+  servlet:
+    context-path: /intercorp
+    
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3307/external_sources?useSSL=false
+    username: root
+    password: password
+    platform: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver 
+  jackson:
+    time-zone: America/Lima
+    date-format: yyyy-MM-dd HH:mm:ss
+    locale: es_PE
+---
+spring:
+  profiles: test
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3307/external_sources?useSSL=false
+    username: root
+    password: password
+
